@@ -12,13 +12,35 @@
   </head>
 
   <body>
-    <header>ナビバー置き場(内部リンクあり)</header>
-    <a>パノラマ写真置き場</a>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <h1>ポートフォリオサイト</h1>
+          <ul class="navbar-nav d-flex">
+            <li><a href="#me" class="nav-item p-5">about me</a></li>
+            <li><a href="#js_1" class="nav-item p-5">js_1</a></li>
+            <li><a href="#js_2" class="nav-item p-5">js_2</a></li>
+            <li><a href="#ruby" class="nav-item p-5">Ruby</a></li>
+            <li><a href="#rails" class="nav-item p-5">Rails</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <div class="card" style="width: 18rem;">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
+
     <ul>
       <li>
         <div>
-          <h2>自己紹介</h2>
-          <img src="face.jpeg"></img>
+          <h2 id="me">自己紹介</h2>
+          <img src="face.jpeg" class="rounded-circle"></img>
           <ul>
             <li><a href="https://twitter.com/Growingplant3" target="_blank">Twitter</a></li>
             <li><a href="https://github.com/Growingplant3" target="_blank">GitHub</a></li>
@@ -70,7 +92,7 @@
       </li>
 
       <li>
-        <h2>Javascriptで作った投稿機能</h2>
+        <h2 id="js_1">Javascriptで作った投稿機能</h2>
         <div>
           <ul>
             <li style="list-style: none;">
@@ -106,7 +128,7 @@
       </li>
 
       <li>
-        <h2>Javascriptで作った神経衰弱</h2>
+        <h2 id="js_2">Javascriptで作った神経衰弱</h2>
         <div>
           <ul>
             <li style="list-style: none;">
@@ -149,7 +171,7 @@
       </li>
 
       <li>
-        <h2>Rubyで作ったカードゲーム</h2>
+        <h2 id="ruby">Rubyで作ったカードゲーム</h2>
         <div>
           <ul>
             <li style="list-style: none;">
@@ -180,19 +202,9 @@
       </li>
 
       <li>
-        <h2>Railsで作ったお薬手帳アプリ</h2>
+        <h2 id="rails">Railsで作ったお薬手帳アプリ</h2>
         <div>
           <ul>
-            <li style="list-style: none;">
-              <video controls="controls" width="400" height="300">
-                <!-- <source src="保留"> -->
-              </video>
-            </li>
-              <p>
-                動画内容<br>
-                0:00〜保留<br>
-                0:00〜保留
-              </p>
             </li>
             <li><b>概要:電子お薬手帳アプリ</b></li>
             <li>
@@ -219,6 +231,8 @@
         </div>
       </li>
     </ul>
-    <fotter>フッター置き場</fotter>
+    <fotter>
+      <p class="bg-dark text-light text-center">下田佳紀,2020年10月</p>
+    </fotter>
   </body>
 </html>

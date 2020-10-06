@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>下田佳紀のポートフォリオサイト</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/jpn.css@latest/dist/bootstrap/jpn.min.css">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -11,7 +12,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   </head>
 
-  <body>
+  <body class="bg-secondary">
     <header>
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
@@ -29,21 +30,21 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <h2 id="me">自己紹介</h2>
-          <img src="face.jpeg" class="rounded-circle"></img>
-          <ul>
-            <li><a href="https://twitter.com/Growingplant3" target="_blank">Twitter</a></li>
-            <li><a href="https://github.com/Growingplant3" target="_blank">GitHub</a></li>
-            <li><a>下田 佳紀(しもだ よしのり)</a></li>
-            <li><a>1983年07月21日生まれ/37歳</a></li>
+        <div class="col-sm card m-2">
+          <h2 id="me" style="border-bottom: solid 3px orange;">自己紹介</h2>
+          <img src="face.jpeg" class="rounded-circle w-50 h-50"></img>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/Growingplant3" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+            <li><a href="https://github.com/Growingplant3" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+            <li><a><i class="fa fa-user" aria-hidden="true"></i> 下田 佳紀(しもだ よしのり)</a></li>
+            <li><a><i class="fa fa-birthday-cake" aria-hidden="true"></i> 1983年07月21日生まれ/37歳</a></li>
           </ul>
         </div>
 
-        <div class="col-sm">
-          <h2>学歴・職歴</h2>
+        <div class="col-sm card m-2">
+          <h2  style="border-bottom: solid 3px orange;">学歴・職歴</h2>
           <ul>
-            <li>2006年3月:東北薬科大学 薬学部 衛生薬学科 卒業</li>
+            <li>2006年3月:東北薬科大学薬学部衛生薬学科卒業</li>
             <li>2006年4月:ドラッグストアへ就職</li>
             <li>2006年4月:薬剤師国家資格取得</li>
             <li>2010年3月:調剤薬局へ転職</li>
@@ -51,11 +52,12 @@
           </ul>
         </div>
 
-        <div class="col-sm">
-          <h2>転職活動について</h2>
+        <div class="col-sm card m-2">
+          <h2  style="border-bottom: solid 3px orange;">転職活動について</h2>
           <ul>
+            <li>希望職種:バックエンドエンジニア</li>
             <li>学習中の言語:Rails/JavaScript/Vue</li>
-            <li>勤務地希望:東京23区</li>
+            <li>勤務地希望:東京23区内</li>
             <li>希望年収:新卒初任給程度</li>
             <li>興味を持って頂けましたらご連絡ください！</li>
           </ul>
@@ -65,10 +67,11 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <h2>なぜエンジニアになりたいのか？</h2>
-          <strong>webサービスを通して多くの人の健康増進に貢献したい、webエンジニアとしてその開発・運用に携わりたいからです。</strong><br>
-          <br>
+        <div class="col-sm card m-2">
+          <h2 style="border-bottom: solid 3px red;"><i class="fa fa-check-square-o" aria-hidden="true"></i>なぜエンジニアになりたいのか？</h2>
+          <p class="font-weight-bold h4">
+            webサービスを通して多くの人の健康増進に貢献したい、webエンジニアとしてその開発・運用に携わりたいからです。
+          </p>
           <p>
             大学卒業後企業に勤め、転職を経て三職種を経験しました。<br>
             病気を経験されて元の生活環境に戻れなくなる患者を多く見てきました。<br>
@@ -83,16 +86,16 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <h2 id="js_1">Javascriptで作った投稿機能</h2>
-          <ul>
+        <div class="col-sm card m-2">
+          <h2 id="js_1" style="border-bottom: solid 3px green;">Javascriptで作った投稿機能</h2>
+          <ul class="list-unstyled">
             <li style="list-style: none;">
               <video controls="controls" width="400" height="300">
                 <source src="posting_function.mov">
               </video>
             </li>
-            <li><b>概要:画像・文字投稿アプリ</b></li>
-            <li>
+            <li style="border-bottom: solid 1px purple;" class="h5"><i class="fa fa-info-circle" aria-hidden="true"></i> 概要 : 画像・文字投稿アプリ</li>
+            <li class="fa fa-navicon" aria-hidden="true">
               機能について
               <ul>
                 <li>入力した文字列を投稿できます。</li>
@@ -105,7 +108,7 @@
             </li>
             <li>
               <p>
-                なぜこのアプリを作ったのか<br>
+                <li class="fa fa-question-circle" aria-hidden="true"> なぜこのアプリを作ったのか？<br>
                 Javascriptで何かアプリケーションを作ってみたかったからです。<br>
                 JavaScriptを学びたくて、初学者向けJavascriptの勉強会に参加しました。<br>
                 JavaScriptを用いて文字投稿機能を作成するにはどうするか？の演習問題に対して、<br>
@@ -117,15 +120,15 @@
           </ul>
         </div>
   
-        <div class="col-sm">
-          <h2 id="js_2">Javascriptで作った神経衰弱</h2>
-          <ul>
+        <div class="col-sm card m-2">
+          <h2 id="js_2" style="border-bottom: solid 3px green;">Javascriptで作った神経衰弱</h2>
+          <ul class="list-unstyled">
             <li style="list-style: none;">
               <video controls="controls" width="400" height="300">
                 <source src="nervous_breakdown.mov">
               </video>
             </li>
-            <li style="list-style: none;"><b>音量注意！</b></li>
+            <li style="list-style: none;" class="text-danger h5">音量注意！</li>
             <li>
               <p>
                 動画内容<br>
@@ -133,8 +136,8 @@
                 0:49〜本番環境
               </p>
             </li>
-            <li><b>概要:神経衰弱アプリ</b></li>
-            <li>
+            <li style="border-bottom: solid 1px purple;" class="h5"><i class="fa fa-info-circle" aria-hidden="true"></i> 概要 : 神経衰弱アプリ</li>
+            <li class="fa fa-navicon" aria-hidden="true">
               ルール
               <ul>
                 <li>タイマーをクリックすると、カウントダウン開始。</li>
@@ -148,7 +151,7 @@
             </li>
             <li>
               <p>
-                なぜこのアプリを作ったのか<br>
+                <li class="fa fa-question-circle" aria-hidden="true"> なぜこのアプリを作ったのか？<br>
                 プレイヤーがドキドキ・ワクワクするようなアプリケーションを作ってみたかったからです。<br>
                 制限時間・効果音に加えて直感的な操作でゲームを進められるように作成しました。<br>
                 Windows/Macなどの環境に依存しにくいよう、ブラウザゲームにしました。
@@ -162,17 +165,17 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <h2 id="ruby">Rubyで作ったカードゲーム</h2>
-          <ul>
+        <div class="col-sm card m-2">
+          <h2 id="ruby" style="border-bottom: solid 3px green;">Rubyで作ったカードゲーム</h2>
+          <ul class="list-unstyled">
             <li style="list-style: none;">
               <video controls="controls" width="400" height="300">
                 <source src="e_card_game.mov">
               </video>
             </li>
-            <li><b>概要:３すくみカードゲームアプリ</b></li>
-            <li>
-              機能について
+            <li style="border-bottom: solid 1px purple;" class="h5"><i class="fa fa-info-circle" aria-hidden="true"></i> 概要 : ３すくみカードゲームアプリ</li>
+            <li class="fa fa-navicon" aria-hidden="true">
+              ルール
               <ul>
                 <li>カードの種類は全部で３種類。</li>
                 <li>各カード間の強弱関係はジャンケンのような３すくみ。</li>
@@ -183,7 +186,7 @@
             </li>
             <li>
               <p>
-                なぜこのアプリを作ったのか<br>
+                <li class="fa fa-question-circle" aria-hidden="true"> なぜこのアプリを作ったのか？<br>
                 基礎的なRubyの文法を学ぶためです。<br>
               </p>
             </li>
@@ -191,11 +194,11 @@
           </ul>
         </div>
 
-        <div class="col-sm">
-          <h2 id="rails">Railsで作ったお薬手帳アプリ</h2>
-          <ul>
-            <li><b>概要:電子お薬手帳アプリ</b></li>
-            <li>
+        <div class="col-sm card m-2">
+          <h2 id="rails" style="border-bottom: solid 3px green;">Railsで作ったお薬手帳アプリ</h2>
+          <ul class="list-unstyled">
+            <li style="border-bottom: solid 1px purple;" class="h5"><i class="fa fa-info-circle" aria-hidden="true"></i> 概要 : 電子お薬手帳アプリ</li>
+            <li class="fa fa-navicon" aria-hidden="true">
               機能について
               <ul>
                 <li>ユーザー/薬局毎の新規登録・ログイン・ログアウト機能があります。</li>
@@ -207,11 +210,10 @@
             </li>
             <li>
               <p>
-                なぜこのアプリを作ったのか<br>
+                <li class="fa fa-question-circle" aria-hidden="true"> なぜこのアプリを作ったのか？<br>
                 現在処方箋医薬品を受け取る際に、お薬手帳への記録は紙媒体が主流となっています。<br>
                 しかし紙媒体だけでは不都合な場面も多々ありますので、<br>
-                電子媒体で利用することにより患者側・薬剤師側双方にメリットがあると考え<br>
-                自分なりのアプリを制作してみました。
+                電子媒体で利用することにより患者側・薬剤師側双方にメリットがあると考え自分なりのアプリを制作してみました。
               </p>
             </li>
             <li><a href="https://github.com/Growingplant3/medicine_notebook" target="_blank">ソースコードリンク</a></li>

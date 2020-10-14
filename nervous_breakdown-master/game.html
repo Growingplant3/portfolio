@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="game.css">
+    <title>神経衰弱ゲーム</title>
+  </head>
+  <body>
+    <audio id="correct" src="correct.mp3"></audio>
+    <audio id="wrong" src="wrong.mp3"></audio>
+    <div class="container">
+      <div class="row">
+        <img class="col-4" src="goddess.png" width="300px" height="300px">
+        <div class="col-7 balloon1-left">
+            <p>女神</p>
+            <p>「地上のものたちは今、未知なる病に遭遇しています。</p>
+            <p>　病の原因が分からず、打つ手もなく困り果てています。</p>
+            <p>　命の危機が差し迫っています。</p>
+            <p>　しかし、安心してください。よく効く薬を私が用意しました。</p>
+            <p>　皆さんで手分けしてお薬を届けてきてください。</p>
+            <p>　正しい飲み方は1回3錠です。</p>
+            <p>　違う薬の飲み合わせは危険ですから、必ず同じ薬を用意してください。</p>
+            <p>　とても似ている薬なので、絶対に間違えてはいけません。</p>
+            <p>　残された時間はたったの60秒です。さぁ急いで！！」</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-7 balloon1-right">
+            <li>小人A</li>
+            <li>「同じ薬を三つ揃えるだけね、簡単よ。あたしに任せて！」</li>
+            <li>小人B</li>
+            <li>「ちょっと待って、箱を開けてみないと中身が分からない状態じゃないか！？」</li>
+            <li>小人C</li>
+            <li>「文句を言ってても仕方ないぞ、時間がない。みんな急げ〜。」</li>
+            <li>小人D</li>
+            <li>「違う薬を集めちゃったらやり直しだぞ！集中しろよ！！」</li>
+            <li>小人A</li>
+            <li>「タイマーをクリックしたら始まるよ。もう一回挑戦する時にも押してね！」</li>
+        </div>
+        <img class="col-4" src="child.png" width="300px" height="300px">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <p class="sick_messages">＼喉が痛いヨォ／</p>
+          <img class="sick_characters" src="sick_boy.png" width="150px" height="150px">
+        </div>
+        <div class="col-sm">
+          <p class="sick_messages">＼頭が痛くって／</p>
+          <img class="sick_characters" src="sick_girl.png" width="150px" height="150px">
+        </div>
+        <div class="col-sm">
+          <p class="sick_messages">＼吐き気がします／</p>
+          <img class="sick_characters" src="sick_man.png" width="150px" height="150px">
+        </div>
+        <div class="col-sm">
+          <p class="sick_messages">＼咳が止まりません／</p>
+          <img class="sick_characters" src="sick_woman.png" width="150px" height="150px">
+        </div>
+        <div class="col-sm">
+          <p class="sick_messages">＼お腹が痛いんじゃ／</p>
+          <img class="sick_characters" src="sick_old_man.png" width="150px" height="150px">
+        </div>
+        <div class="col-sm">
+          <p class="sick_messages">＼syntax error／</p>
+          <img class="sick_characters" src="sick_computer.png" width="150px" height="150px">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="timer_frame col-2 rounded-pill w-25 mx-auto">
+          <li class="text-center list-group-item">タイマー</li>
+          <li class="timer text-center list-group-item"></li>
+        </div>
+        <div class="col-10">
+          <table id="game_table" class="mx-auto"></table>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

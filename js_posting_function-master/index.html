@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">ボタンです。</button>  
+    <script type="text/javascript">  
+    const btn = document.getElementById('btn');  
+    function cgButtonColor(){  
+      if (btn.style.color == 'red') {
+        btn.style.color = 'black';
+      } else {
+        btn.style.color = 'red';
+      }   
+    }  
+    btn.onclick = cgButtonColor;  
+    </script>    
+  </body>
+</html>

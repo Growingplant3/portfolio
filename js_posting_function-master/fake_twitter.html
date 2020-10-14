@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+  <html lang="ja">  
+  <head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+      <title>○イッター</title>  
+    </head>  
+    <body>  
+      <form>  
+        <textarea id="mTextarea" rows="4" cols="40" placeholder="ツイート"></textarea><br>
+      </form>  
+      <button id="submitBtn">投稿</button><br>
+      <p id="output"></p>
+
+      <script type="text/javascript">
+        var btn = document.getElementById("submitBtn");
+        btn.addEventListener('click', function() {
+          var output = document.getElementById("output");
+          var input = document.getElementById("mTextarea");
+          output.innerText += input.value + "\n";
+        });
+      </script>  
+    </body>  
+</html>
